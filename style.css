@@ -1,0 +1,292 @@
+body {
+    margin: 0;
+    display: block;
+    background-color: #fff;
+    font-family: "游ゴシック", "YuGothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif ;
+    overflow-x: hidden;
+}
+header {
+    position: relative;
+    height: 70px;
+    top: 0%;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 35px ;
+    background-color: #fff;
+    white-space: nowrap;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+h1 img {
+    width: 185px;
+    height: auto;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+nav li {
+    text-align: center;
+    margin: 0 25px;
+}
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-size: 10px; 
+}
+nav ul {
+    font-weight: bold;
+}
+header a:hover {
+    opacity: 0.6;
+}
+.counseling {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 25px;
+    margin: 5px 0 0 0;
+    background-color: #F79214;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 12px;
+    font-weight: normal;
+    cursor: pointer;
+}
+.firstview {
+    position: relative;
+    top: 0%;
+    width: 100%;
+    height: 750px;
+    margin-top: 0px;
+    overflow: hidden;
+}
+.midashi {
+    position: absolute;
+    bottom: 120px;
+    right: 50%;
+    padding-left : 0;
+    padding-bottom: 10px;
+    margin: 0;
+    height: 130px;
+}
+.main-text {
+    color: #333;
+    font-size: 42px;
+    font-weight: bold;
+    margin: 10px;
+    white-space: nowrap;
+}
+.cunoseling-bottom-left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0px;
+    margin: 0;
+    margin-left: -10px;
+    background-color: #F79214;
+    color: white;
+    text-decoration: none;
+    width: 470px;
+    border-radius: 30px;
+    font-size: 15px;
+    cursor: pointer;
+}
+.midashi a:hover {
+    opacity: 0.7;
+}
+.sub-text {
+    color: #333;
+    font-size: 12px;
+    white-space: nowrap;
+}
+.image-no1 {
+    display: inline-block;
+    position: absolute;
+    left: 460px;
+    bottom: 240px;
+    height: 25px;
+}
+.object-frame-left {
+    position: absolute;
+    width: 350px;
+    height: auto;
+    top: -70px;
+    left: 0;
+    z-index: -1;
+}
+.object-frame-right {
+    position: absolute;
+    width: 350px;
+    height: auto;
+    bottom: -200px;
+    right: 0;
+    z-index: -1;
+}
+.image  {
+    position: absolute;
+    right: 0;
+    top: -70px;
+    height: 100%;
+    width: auto;
+    max-height: 640px;
+    z-index: -2;
+}
+.image img {
+    width: auto; 
+    height: 100%; 
+    object-fit: cover; 
+}
+.object-back {
+    position: absolute;
+    left: -125px;
+    bottom: 50px;
+    width: 650px;
+    height: 200px;
+    border: 1px solid #F79214;
+    border-radius: 100px;
+    background-color: transparent;
+    transform: rotate(-45deg);
+    z-index: -3;
+}
+.image-kyuufusheido {
+    display: inline-block;
+    position: fixed;
+    right: 4px;
+    bottom: -10px;
+    width: 375px;
+    height: auto;
+    max-height: 375px;
+    z-index: 1000;
+}
+.image-kyuufusheido img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.menu-btn {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    position: fixed;
+    top: 25px;
+    z-index: 2000;
+}
+.menu-btn__bar {
+    width: 25px;
+    height: 2px;
+    background-color: rgb(175, 175, 175);
+    display: block;
+    border-radius: 30px;
+}
+@media (max-width: 1075px) {
+    header {
+        position: fixed;
+        align-items: center;
+    }
+    .menu-btn {
+        display: flex;
+        right: 30px;
+    }
+    nav {
+        display: none;
+    }
+    .firstview {
+        margin-top: 60px;
+    }
+    .midashi {
+        left: 25px;
+        height: 25%;
+        transform: none;
+    }
+    .cunoseling-bottom-left {
+        margin-left: 0;
+    }
+    .object-frame-left {
+        width: 350px;
+    }
+    image {
+        position: relative;
+        width: 100%;
+        height: auto;
+        padding-top: 70px;
+    }
+}
+@media (max-width: 768px) {
+    header {
+        position: fixed;
+        width: 100%;
+    }
+    .menu-btn {
+        display: flex;
+        right: 15px;
+    }
+    h1 img {
+        width: 150px;
+        height: auto;
+    }
+    .firstview {
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+        margin-top: 50px;
+    }
+    .image {
+        width: 100%;
+        height: auto;
+        position: relative;
+        margin-top: 70px;
+    }
+    .image img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+    .midashi {
+        position: static;
+        position: relative;
+        width: 100%;
+        height: auto;
+        margin-top: 50px;
+        margin-left: -15px;
+        text-align: left;
+    }
+    .main-text {
+        font-size: 22px;
+        line-height: 1.6;
+    }
+    .sub-text {
+        font-size: 12px;
+        padding: 2%;
+        white-space: normal;
+    }
+    .cunoseling-bottom-left{
+        width: 470px;
+        margin-top: 15px;
+        margin-left: 10px;
+    }
+    .image-no1 {
+        position: static;
+        position: absolute;
+        top: -20px;
+        left: 240px;
+    }
+    .image-no1 img {
+        width: 100px;
+        height: auto;
+    }
+    .object-frame-left,
+    .object-frame-right,
+    .object-back {
+        display: none;
+    }
+}
