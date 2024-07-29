@@ -123,11 +123,11 @@ header a:hover {
 }
 .object-frame-right {
     position: absolute;
-    width: 350px;
+    width: 340px;
     height: auto;
-    bottom: -200px;
+    bottom: -175px;
     right: 0;
-    z-index: -1;
+    z-index: 10;
 }
 .image  {
     position: absolute;
