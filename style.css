@@ -224,11 +224,14 @@ header a:hover {
 @media (max-width: 768px) {
     header {
         position: fixed;
+        min-height: 70px;
         width: 100%;
+        z-index: 1000;
     }
     .menu-btn {
         display: flex;
         right: 15px;
+        top: 25px;
     }
     h1 img {
         width: 150px;
@@ -270,7 +273,8 @@ header a:hover {
         white-space: normal;
     }
     .cunoseling-bottom-left{
-        width: 470px;
+        width: 90%;
+        max-width: 470px;
         margin-top: 15px;
         margin-left: 10px;
     }
